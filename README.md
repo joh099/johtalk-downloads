@@ -1,34 +1,40 @@
-# JohTalk — downloads
+# johTalk downloads
 
-Release binaries for **JohTalk**. This repository holds a README and GitHub Releases
-and **no source code** — it is public purely so the download links on
-<https://johflow.com> resolve for anyone, without a GitHub account.
+Installers for **johTalk**, voice typing for Windows, macOS and Linux.
+Press a shortcut, speak, and your words are typed where your cursor is.
 
-## Get it
+This repository only holds releases, no source code. It is public so the
+download links on [johflow.com](https://johflow.com) work for everyone,
+without a GitHub account.
 
-Download from **[the latest release](https://github.com/joh099/johtalk-downloads/releases/latest)**, or from the site:
+## Get johTalk
 
-**<https://johflow.com/johtalk/>**
+The easiest way is the download page: **<https://johflow.com/download/>**.
+It picks the right file for your computer and has install notes for each system.
 
-| Platform | File |
+Or take a file from **[the latest release](https://github.com/joh099/johtalk-downloads/releases/latest)**:
+
+| System | File |
 |---|---|
-| Linux | `JohTalk_<version>_amd64.AppImage` — one file, `chmod +x` and run |
-| Linux (Debian/Ubuntu) | `JohTalk_<version>_amd64.deb` |
-| Windows | `JohTalk_<version>_x64-setup.exe` — per-user install, no admin prompt |
-| macOS | not built yet — audio capture and cursor insertion have no macOS code paths |
+| Windows 10 or 11, 64-bit | `johTalk_windows_x64-setup.exe` |
+| macOS 13 or newer, Apple Silicon (M1 or newer) | `johTalk_macos_arm64.dmg` |
+| Linux, 64-bit | `johTalk_linux_x86_64.AppImage` |
+| Debian and Ubuntu | `johTalk_linux_amd64.deb` |
 
-## Why this repo exists
+The download is free. A one-time purchase of $5.99 unlocks johTalk on up to
+3 computers: <https://johflow.com/buy/>.
 
-GitHub serves release assets to anonymous requests only from a *public* repo.
-The application source is private, so the binaries are published here instead.
-Releases are pushed automatically by CI in the source repo when a version tag
-is pushed — nothing is uploaded by hand.
+Each release also carries versioned copies of these files, the signed update
+bundles the app installs itself, `latest.json` (what installed apps check for
+updates) and `SHA256SUMS.txt`.
 
-Download links on the site go through `johflow.com/download/…`, which redirects
-here. That keeps the hosting choice out of every shared link, so it can move
-later without breaking anything.
+## Updates
 
-## Issues
+johTalk checks for updates on its own. On Windows, macOS and the Linux AppImage
+it installs them when you choose "Install and restart". The `.deb` shows a link
+to the new version instead.
 
-Issues are disabled here because there is no code to file them against.
-Reach me through the channels linked at <https://johflow.com/about/>.
+## Questions
+
+Issues are switched off here, since there is no code to file them against.
+Email <joh@johflow.com>, a real person reads it.
